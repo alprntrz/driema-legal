@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - Driema</title>
+<title>Privacy Policy - Noxen</title>
 <style>
 * {
     margin: 0;
@@ -146,96 +146,95 @@ a:hover {
 <body>
 <div class="container">
     <div class="header">
-        <a href="../" class="brand">✨ Driema</a>
+        <a href="../" class="brand">✨ Noxen</a>
         <h1>Privacy Policy</h1>
-        <div class="subtitle">Last Updated: May 9, 2026 · Effective Date: May 9, 2026</div>
+        <div class="subtitle">Last Updated: October 25, 2026 · Effective Date: October 25, 2026</div>
     </div>
 
     <div class="content">
 
 <h2>Introduction</h2>
-<p>Welcome to Driema ("we," "our," "us," or "the App"). Driema is a personal dream journal application developed by Alperen Terzi, an individual based in Turkey. This Privacy Policy explains how we collect, use, store, and protect your information when you use Driema, available on the Apple App Store.</p>
-<p>We are committed to protecting your privacy and being transparent about our practices. By using Driema, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+<p>Welcome to Noxen ("we," "our," "us," or "the App"), formerly called Driema. Noxen is a personal dream journal developed by Alperen Terzi, an individual based in Turkey, and available on the Apple App Store. This Privacy Policy explains what information the App handles, where it goes, and the choices you have.</p>
+<p>Noxen is built to keep your journal on your device. Data leaves your device only in the specific cases described below.</p>
 
-<h2>1. Information We Collect</h2>
-
-<h3>1.1 Information Stored Locally on Your Device</h3>
-<p>Driema is designed to be <strong>privacy-first</strong>. The following information is stored <strong>only on your device</strong> using Apple's SwiftData framework and is <strong>never transmitted to our servers</strong>:</p>
+<h2>1. Information Stored on Your Device</h2>
+<p>The following is stored <strong>only on your device</strong> and is never sent to us:</p>
 <ul>
-    <li><strong>Dream Entries:</strong> Titles, descriptions, dates, moods, and tags you add to your dream journal</li>
-    <li><strong>Personal Notes:</strong> Any private thoughts or reflections you record</li>
-    <li><strong>App Preferences:</strong> Settings, customizations, and display preferences</li>
+    <li><strong>Dream entries:</strong> text, titles, dates, moods, tags and AI interpretations you have received</li>
+    <li><strong>Drafts:</strong> a dream you are still writing, saved automatically so it is not lost</li>
+    <li><strong>Settings:</strong> your name if you enter one, interpretation lens, tradition, birth date for the astrological lens, reminder time and other preferences</li>
+</ul>
+<p><strong>Face ID / passcode lock:</strong> if you turn on the app lock, iOS checks your face, fingerprint or passcode. Noxen only learns whether the check succeeded; it never receives biometric data.</p>
+<p><strong>Morning reminder:</strong> reminders are local notifications scheduled on your device. No server is involved.</p>
+
+<h2>2. Information That Leaves Your Device</h2>
+
+<h3>2.1 AI dream interpretation (only with your permission)</h3>
+<p>Before your first interpretation, the App asks for your permission. If you allow it, then each time you tap <strong>Interpret</strong> on a dream, Noxen sends that one dream's:</p>
+<ul>
+    <li>text,</li>
+    <li>mood (if selected) and tags,</li>
+    <li>chosen interpretation lens and, if relevant, religious tradition or birth date</li>
+</ul>
+<p>to our server, which runs on <strong>Supabase</strong> in the European Union (Frankfurt, Germany). The server forwards it to an AI provider to write the interpretation: <strong>Anthropic</strong> (Claude), or <strong>OpenAI</strong> when Claude is unavailable. We do not send your name, email or a device identifier with the request.</p>
+<p>Our server does not store your dream. Anthropic and OpenAI process it under their API terms; by default neither uses data sent through its API to train its models, and each may keep it for a limited time for safety and abuse monitoring.</p>
+<p>You can withdraw permission at any time in <strong>Settings › Send dreams for AI interpretation</strong>. After that, no dream leaves your device until you allow it again.</p>
+
+<h3>2.2 Daily horoscope</h3>
+<p>If you use the astrological lens, the daily horoscope request sends only your zodiac sign and your device language to our server, which uses the same AI providers. No dream content is included.</p>
+
+<h3>2.3 Daily verse</h3>
+<p>If you use the religious lens, the daily verse is fetched from public scripture services (alquran.cloud, bible-api.com, Sefaria and vedicscriptures.github.io). The request contains only the verse reference; no personal or dream data is sent.</p>
+
+<h3>2.4 Voice capture</h3>
+<p>When you speak a dream, Noxen uses Apple's Speech Recognition to turn it into text. Depending on your device and language, Apple may process the audio on the device or on Apple's servers under <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>. Noxen does not record or store audio; only the resulting text is saved in your journal.</p>
+
+<h3>2.5 Anonymous analytics</h3>
+<p>Noxen uses <strong>TelemetryDeck</strong> to count anonymous app events, such as a dream being saved, an interpretation being requested, or the subscription screen being shown. These events contain no dream text and are not linked to your identity. TelemetryDeck's privacy policy: <a href="https://telemetrydeck.com/privacy/" target="_blank">https://telemetrydeck.com/privacy/</a></p>
+
+<h3>2.6 Subscriptions</h3>
+<p>Noxen Plus is sold through Apple's App Store. Apple processes payments; we never receive your payment details. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
+
+<h2>3. How We Use Information</h2>
+<ul>
+    <li><strong>To run the journal:</strong> record, search, edit and export your dreams on your device</li>
+    <li><strong>To write interpretations and horoscopes:</strong> only when you ask, as described in section 2</li>
+    <li><strong>To improve the App:</strong> with anonymous event counts that contain no personal data</li>
+</ul>
+<p>We do not sell your information, use it for advertising, or track you across other apps and websites.</p>
+
+<h2>4. Service Providers</h2>
+<ul>
+    <li><strong>Supabase</strong> (server hosting, EU): <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+    <li><strong>Anthropic</strong> (Claude AI): <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a></li>
+    <li><strong>OpenAI</strong> (fallback AI): <a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></li>
+    <li><strong>TelemetryDeck</strong> (anonymous analytics): <a href="https://telemetrydeck.com/privacy/" target="_blank">telemetrydeck.com/privacy</a></li>
+    <li><strong>Apple</strong> (App Store, speech recognition): <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></li>
 </ul>
 
-<h3>1.2 Information Sent to Third-Party Services (Premium Features Only)</h3>
-<p>When you use the <strong>AI Dream Interpretation</strong> feature (available with Driema Plus subscription), we send the following data to OpenAI's API:</p>
+<h2>5. Data Storage and Security</h2>
+<p>Your journal is stored on your device and protected by iOS security features, including device encryption and app sandboxing. You can add the optional Face ID or passcode lock in Settings. Noxen does not sync your journal to any cloud service. Requests to our server are sent over encrypted HTTPS connections.</p>
+
+<h2>6. Your Rights and Choices</h2>
 <ul>
-    <li>The text content of your dream entry</li>
-    <li>Mood indicator (if selected)</li>
-    <li>Tags associated with the dream</li>
+    <li><strong>Access and portability:</strong> export all your dreams as PDF or JSON from Settings › Your Data</li>
+    <li><strong>Correction:</strong> edit any dream at any time</li>
+    <li><strong>Deletion:</strong> delete dreams individually, or delete the App to remove all data from your device</li>
+    <li><strong>Withdraw consent:</strong> turn off Settings › Send dreams for AI interpretation</li>
 </ul>
-<p>We <strong>do not</strong> send any personally identifiable information (such as your name, email, or device ID) to OpenAI. The data sent is anonymous and used solely for generating an AI-powered interpretation.</p>
+<p>If you are in the European Economic Area, the United Kingdom or Turkey, you may also have rights under the GDPR or KVKK. Since we do not keep your dreams on our server, most requests can be fulfilled directly in the App; for anything else, contact us below.</p>
 
-<h3>1.3 Subscription and Purchase Information</h3>
-<p>Subscription management is handled through Apple's App Store and RevenueCat (our subscription service provider). We do not collect or store payment information directly.</p>
+<h2>7. Data Retention</h2>
+<p>Your dreams stay on your device until you delete them or the App. Our server keeps no copy of interpretation requests; it keeps only basic technical logs (such as the time and result of a request) for a short period to keep the service running. AI providers' retention is described in section 2.1.</p>
 
-<h2>2. How We Use Your Information</h2>
-<p>We use the information collected to:</p>
-<ul>
-    <li><strong>Provide core functionality:</strong> Allow you to record, search, and manage your dream entries</li>
-    <li><strong>Provide AI interpretations:</strong> Generate AI-powered dream interpretations when requested (Premium only)</li>
-    <li><strong>Manage subscriptions:</strong> Process subscription purchases and renewals via Apple and RevenueCat</li>
-    <li><strong>Improve the App:</strong> Analyze anonymized usage patterns (no personal data) to improve features</li>
-</ul>
+<h2>8. Children's Privacy</h2>
+<p>Noxen is not directed at children under 13. We do not knowingly collect personal information from children under 13. If we learn that a child under 13 has provided personal information, we will take steps to delete it.</p>
 
-<h2>3. Data Storage and Security</h2>
+<h2>9. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will show the new "Last Updated" date at the top of this page, and for material changes we will let you know in the App. Continued use of Noxen after a change means you accept the updated policy.</p>
 
-<h3>3.1 Local Storage</h3>
-<p>All your dream entries and personal data are stored <strong>exclusively on your device</strong> using Apple's secure SwiftData framework. We have no access to this data.</p>
-
-<h3>3.2 No Cloud Sync</h3>
-<p>Driema does not currently sync your data to the cloud. Your dreams remain on your device only.</p>
-
-<h3>3.3 Security Measures</h3>
-<p>We rely on Apple's iOS security features to protect your data, including:</p>
-<ul>
-    <li>Device encryption</li>
-    <li>App sandboxing</li>
-    <li>Secure data persistence</li>
-</ul>
-
-<h2>4. Third-Party Services</h2>
-<p>Driema uses the following third-party services:</p>
-
-<h3>4.1 OpenAI (AI Dream Interpretation)</h3>
-<p>When you use AI features, your dream text is sent to OpenAI for processing. OpenAI's privacy practices are governed by their privacy policy: <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a></p>
-
-<h3>4.2 RevenueCat (Subscription Management)</h3>
-<p>RevenueCat handles subscription management and provides anonymized analytics. Their privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></p>
-
-<h3>4.3 Apple App Store</h3>
-<p>Subscriptions are processed by Apple. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
-
-<h2>5. Your Rights (GDPR & General)</h2>
-<p>You have the following rights regarding your data:</p>
-<ul>
-    <li><strong>Access:</strong> All your data is on your device—you have full access at any time</li>
-    <li><strong>Deletion:</strong> Delete dreams individually within the app, or delete the entire app to remove all data</li>
-    <li><strong>Portability:</strong> Future versions will support data export (PDF, JSON)</li>
-    <li><strong>Correction:</strong> Edit any dream entry at any time within the app</li>
-</ul>
-
-<h2>6. Data Retention</h2>
-<p>Your dream entries are retained on your device until you delete them or uninstall the app. AI interpretation requests are not retained by us; OpenAI's retention policy applies (typically 30 days for abuse monitoring).</p>
-
-<h2>7. Children's Privacy</h2>
-<p>Driema is not directed at children under 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete it.</p>
-
-<h2>8. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the "Last Updated" date at the top of this policy. Continued use of Driema after such changes constitutes your acceptance of the new Privacy Policy.</p>
-
-<h2>9. Contact Us</h2>
-<p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+<h2>10. Contact Us</h2>
+<p>If you have questions about this Privacy Policy or your data, contact us:</p>
 <ul>
     <li><strong>Email:</strong> <a href="mailto:alperenterzi7+driema@gmail.com">alperenterzi7+driema@gmail.com</a></li>
     <li><strong>Developer:</strong> Alperen Terzi</li>
@@ -245,13 +244,13 @@ a:hover {
 <div class="divider"></div>
 
 <p style="text-align: center; color: #B5B0CC; font-size: 14px; margin-top: 24px;">
-    By using Driema, you acknowledge that you have read and understood this Privacy Policy.
+    By using Noxen, you acknowledge that you have read and understood this Privacy Policy.
 </p>
 
     </div>
 
     <div class="footer">
-        <p>© 2026 Driema · All rights reserved</p>
+        <p>© 2026 Noxen · All rights reserved</p>
     </div>
 </div>
 </body>
